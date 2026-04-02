@@ -1,8 +1,12 @@
-abstract class Product {
+
+export abstract class Product {
     sku: string;
     name: string;
-    price: number;
+    protected price: number;
 
+
+    abstract getPriceWithTax(): number;
+    
 
     constructor(sku: string, name: string, price: number) {
         this.sku = sku;
@@ -13,6 +17,5 @@ abstract class Product {
     displayDetails(): string {
     return `Item ${this.sku} is ${this.name} and costs $${this.price}`;
     }
+}
 
-    abstract getPriceWithTax(): number;
-    }
