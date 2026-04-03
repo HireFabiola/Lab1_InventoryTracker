@@ -1,6 +1,6 @@
 import { Product } from './Product.js';
 
-class DigitalProduct extends Product {
+export class DigitalProduct extends Product {
 
     fileSize: number;
 
@@ -18,6 +18,6 @@ class DigitalProduct extends Product {
     }
 }
 let testProduct = new DigitalProduct("1225754", "test3", 10.00, 15);
-console.log(testProduct.getPriceWithTax());
-console.log(testProduct.getFileSize());
-console.log(testProduct.displayDetails());
+// console.log(testProduct.getPriceWithTax());
+// console.log(testProduct.getFileSize());
+// console.log(testProduct.displayDetails());

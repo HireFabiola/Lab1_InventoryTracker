@@ -1,6 +1,6 @@
 import { Product } from './Product.js';
 
-class PhysicalProduct extends Product {
+export class PhysicalProduct extends Product {
 
     weight: number;
 
@@ -20,7 +20,7 @@ class PhysicalProduct extends Product {
 
 }
 
-let testProduct = new PhysicalProduct("1225754", "test2", 10.00, 2.5);
-console.log(testProduct.getPriceWithTax());
-console.log(testProduct.getWeight());
-console.log(testProduct.displayDetails());
+// let testProduct = new PhysicalProduct("1225754", "test2", 10.00, 2.5);
+// console.log(testProduct.getPriceWithTax());
+// console.log(testProduct.getWeight());
+// console.log(testProduct.displayDetails());

@@ -21,5 +21,5 @@ export function taxCalculator(product: Product): string {
     } else if ("fileSize" in product) {
         return "This product has zero tax";
     }
-    return "Unknown product type";
+
 }
